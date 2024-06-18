@@ -3,8 +3,11 @@ import {UilSignOutAlt} from '@iconscout/react-unicons'
 
 import './Sidebar.css'
 import { SidebarData } from '../../data';
+import { useState } from 'react';
 
 const Sidebar = () => {
+
+    const [selected, setSelected] = useState(0);
     
     return (
         <div className="Sidebar">
@@ -22,7 +25,11 @@ const Sidebar = () => {
                 {
                     SidebarData.map(
                         (item, index) => (
-                            <div key={index} className="menuItem">
+                            <div 
+                             key={index} 
+                             className={selected===index ? "menuItem active" : "menuItem"}
+                             onClick={() => setSelected(index) }
+                             >
                                 <div>
                                     <item.icon />
                                 </div>
