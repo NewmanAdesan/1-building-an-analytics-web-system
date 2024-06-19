@@ -2,6 +2,7 @@
 
 import './MainDash.css'
 import Cards from "../cards/Cards";
+import Table from '../table/Table';
 
 
 const MainDash = () => {
@@ -14,6 +15,7 @@ const MainDash = () => {
         <Cards />
 
         {/* table */}
+        <Table />
     </div>;
     
 }
