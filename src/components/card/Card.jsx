@@ -8,6 +8,8 @@ import Chart from "react-apexcharts";
 import "./Card.css"
 import {UilTimes} from '@iconscout/react-unicons'
 
+
+
 const Card = (props) => {
 
     // this ui has 2 forms
@@ -28,6 +30,7 @@ const Card = (props) => {
     
 }
 export default Card
+
 
 
 function CompactCard ({param, setExpanded}) {
@@ -57,6 +60,7 @@ function CompactCard ({param, setExpanded}) {
         </motion.div>
     )
 }
+
 
 
 function ExpandedCard ({param, setExpanded}) {
